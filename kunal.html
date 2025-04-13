@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Kunaluuu!!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: popIn 2s ease-in-out;
+    }
+
+    .center-img {
+      display: block;
+      margin: 20px auto;
+      max-width: 90%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    .main-paragraph {
+      font-size: 1.5em;
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 15px;
+    }
+
+    .side-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .side-paragraph {
+      font-size: 1.3em;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 15px;
+      width: 300px;
+      margin: 10px;
+    }
+
+    .regards {
+      margin-top: 40px;
+      font-size: 1.2em;
+      font-style: italic;
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <h1>Happyyy Birthdayyy Kunaluuu❤️❤️!!</h1>
+
+  <p class="main-paragraph">Wishing you a day filled with happiness, laughter, and unforgettable memories. You deserve all the good things life has to offer😘</p>
+
+  <img src="IMG_1824.JPG" alt="Birthday Photo" class="center-img">
+
+  <div class="side-container">
+    <p class="side-paragraph">Another year older, wiser, and cooler! May your birthday be as awesome as you are, and your year be full of success and adventures.</p>
+    <p class="side-paragraph">Grateful for all the memories we’ve created and excited for the ones still to come🫂🫂. Let’s celebrate YOU today!</p>
+  </div>
+
+  <div class="regards">With lots of love, <br>Shreyash</div>
+
+  <script>
+    function fireCelebration() {
+      confetti({
+        particleCount: 150,
+        spread: 100,
+        origin: { y: 0.6 }
+      });
+
+      setInterval(() => {
+        confetti({
+          particleCount: 100,
+          angle: Math.random() * 360,
+          spread: 60,
+          origin: {
+            x: Math.random(),
+            y: Math.random() * 0.8
+          }
+        });
+      }, 1500);
+    }
+
+    fireCelebration();
+  </script>
+</body>
+</html>
